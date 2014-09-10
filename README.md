@@ -127,6 +127,6 @@ make-docker-command will only work when called from under the `/Users/` director
 
 ## License
 
-make-docker-command is available under the MIT license, courtesy of marmelab. 
+make-docker-command is available under the [MIT license](https://github.com/marmelab/make-docker-command/blob/master/LICENSE), courtesy of marmelab. 
 
 Comments and pull requests are welcome.
