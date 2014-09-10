@@ -33,6 +33,10 @@ make-docker-command requires Docker 1.2, and works both on Linux and OSX.
 
 For more details about the intention and the implementation, see [the make-docker-command introduction post on the marmelab blog](http://marmelab.com/blog/2014/09/10/make-docker-command.html).
 
+## Installation
+
+Copy the content of the `Makefile` from this repository to the `Makefile` of the projects you're working on. 
+
 ## Sharing SSH Keys
 
 Some commands may require SSH keys to connect to a secured repository (e.g. GitHub). make-docker-command will use the identity and hosts file declared in the `DOCKER_SSH_IDENTITY` and `DOCKER_SSH_KNOWN_HOSTS` environment variables (default to `~/.ssh/id_rsa` and `~/.ssh/known_hosts`).
