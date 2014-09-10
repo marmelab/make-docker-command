@@ -18,10 +18,10 @@ make-docker-command doesn't change the syntax of your favorite commands: just pr
 
 make-docker-command currently supports the following dockerized commands:
 
-* composer
-* phpunit
-* bower
-* compass
+* [composer](https://github.com/marmelab/make-docker-command#composer)
+* [phpunit](https://github.com/marmelab/make-docker-command#phpunit)
+* [bower](https://github.com/marmelab/make-docker-command#bower)
+* [compass](https://github.com/marmelab/make-docker-command#compass)
 
 **Tip**: For command invocations with an option (like `--prefer-source`), use `make --` instead of `make`:
 
