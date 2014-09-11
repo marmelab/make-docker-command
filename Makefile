@@ -52,7 +52,7 @@ endif
 
 composer:
 	@mkdir --parent $(COMPOSER_CACHE_DIR)
-	@docker run -ti -rm \
+	@docker run -ti --rm=true \
 		-v `pwd`:/srv \
 		-v $(COMPOSER_CACHE_DIR):$(HOMEDIR)/.composer \
 		-v $(DOCKER_SSH_IDENTITY):/var/tmp/id \
@@ -64,17 +64,17 @@ composer:
 			$(EXECUTE_AS) hhvm /usr/local/bin/composer $(COMMAND_ARGS)'
 
 phpunit:
-	@docker run -ti -rm \
+	@docker run -ti --rm=true \
 		-v `pwd`:/srv \
 		marmelab/phpunit-hhvm $(COMMAND_ARGS)
 
 compass:
-	@docker run -ti rm \
+	@docker run -ti --rm=true \
 		-v `pwd`:/srv \
 		marmelab/compass $(COMMAND_ARGS)
 
 bower:
-	@docker run -ti -rm \
+	@docker run -ti --rm=true \
 		-v `pwd`:/srv \
 		-v $(BOWER_CACHE_DIR):$(HOMEDIR)/.bower \
 		-v $(DOCKER_SSH_IDENTITY):/var/tmp/id \
