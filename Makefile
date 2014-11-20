@@ -38,7 +38,7 @@ ADD_SSH_ACCESS_COMMAND = \
 
 # utility commands
 AUTHORIZE_HOME_DIR_COMMAND = chown -R $(CONTAINER_USERNAME):$(CONTAINER_GROUPNAME) $(HOMEDIR) &&
-EXECUTE_AS = sudo -u $(CONTAINER_USERNAME) HOME=/home/dummy 
+EXECUTE_AS = sudo -u $(CONTAINER_USERNAME) HOME=$(HOMEDIR)
 
 # If the first argument is one of the supported commands...
 SUPPORTED_COMMANDS := composer phpunit compass bower
