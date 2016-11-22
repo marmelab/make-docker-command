@@ -1,5 +1,5 @@
 # determine platform
-ifeq (Boot2Docker, $(findstring Boot2Docker, $(shell docker info)))
+ifeq (Darwin, $(findstring Darwin, $(shell uname -a)))
   PLATFORM := OSX
 else
   PLATFORM := Linux
